@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="displayPane" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mahj.MoodStatsController">
+    <children>
+        <Label fx:id="mainLabel" alignment="CENTER" prefHeight="46.0" prefWidth="335.0" style="-fx-background-color: #93E1D8;" text="Mood Pie Charts " />
+        <Button fx:id="backBtn" layoutX="9.0" layoutY="9.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="27.0" style="-fx-background-radius: 20px; -fx-background-color: transparent;">
+            <graphic>
+                <ImageView fitWidth="28.0" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/icons/arrow%20back.png" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+
+
+            <PieChart fx:id="moodPieChart" layoutY="46.0" prefWidth="335.0" />
+
+    </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+rootProject.name = 'csci205_final_project'
+include 'src:test:feelBitTests'
+findProject(':src:test:feelBitTests')?.name = 'feelBitTests'
+

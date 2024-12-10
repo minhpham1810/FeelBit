@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="displayPane" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #77AF9C;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mahj.CreateAccountController">
+   <children>
+      <ImageView fx:id="createAccLogo" fitHeight="100.0" fitWidth="100.0" layoutX="118.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="118.0" AnchorPane.rightAnchor="116.6">
+         <image>
+            <Image url="@assets/logos/Calmer%20Colors.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="crtAccUsername" layoutX="37.0" layoutY="240.0" prefHeight="25.0" prefWidth="262.0" promptText="Username" style="-fx-background-color: WHITE; -fx-background-radius: 10px;" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="36.0" />
+      <PasswordField fx:id="crtAccPassword" layoutX="37.0" layoutY="273.0" prefHeight="26.0" prefWidth="262.0" promptText="Password" style="-fx-background-color: WHITE; -fx-background-radius: 10px;" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="36.0" />
+      <Button fx:id="createAccountBtn" layoutX="108.0" layoutY="313.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: #7F8281; -fx-background-radius: 10px;" text="Create Account" textFill="#f5f0f0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="107.99999999999999" />
+      <Label fx:id="popUpLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="347.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>
