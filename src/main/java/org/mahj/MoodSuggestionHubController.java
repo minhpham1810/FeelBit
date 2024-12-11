@@ -82,8 +82,10 @@ public class MoodSuggestionHubController {
         initEventHandlers();
         SuggestionDisplay.setText(LogEmotionController.suggestionDisplay);
         SuggestionDisplay.setEditable(false);
+        SuggestionDisplay.setWrapText(true);
         EntryDisplay.setText(LogEmotionController.journalDisplay);
         EntryDisplay.setEditable(false);
+        EntryDisplay.setWrapText(true);
 
     }
 

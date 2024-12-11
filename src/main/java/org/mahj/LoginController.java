@@ -107,7 +107,7 @@ public class LoginController {
                     ObjectId objectId = userDoc.getObjectId("_id");
                     userObjectId = objectId.toHexString();
                 }
-
+                popUpLabel.setTextFill(Color.GREEN);
                 popUpLabel.setText("Login successful! Redirecting...");
                 PauseTransition delay = new PauseTransition(Duration.seconds(1));
                 delay.setOnFinished(e -> {

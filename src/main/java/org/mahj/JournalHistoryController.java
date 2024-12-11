@@ -78,6 +78,9 @@ public class JournalHistoryController {
         assert fullEntryTextArea != null : "fx:id=\"fullEntryTextArea\" was not injected: check your FXML file 'Journal History.fxml'.";  // Assert TextArea is injected
         assert displayPane != null : "fx:id=\"displayPane\" was not injected: check your FXML file 'Journal History.fxml'.";
         assert textDisplay != null : "fx:id=\"textDisplay\" was not injected: check your FXML file 'Journal History.fxml'.";
+
+        textDisplay.setEditable(false);
+        textDisplay.setWrapText(true);
         initEventHandlers();
         loadJournalHistory();
 
@@ -134,7 +137,7 @@ public class JournalHistoryController {
 
 
         // Query for all entries of the logged-in user
-        Document query = new Document("userId", loggedInUser); // Assuming 'userId' is stored in the document
+        Document query = new Document("logId", userObjectId); // Assuming 'userId' is stored in the document
         MongoCursor<Document> cursor = userLogDatabase.find(query).iterator(); // Find all logs for this user
 
 
@@ -201,13 +204,13 @@ public class JournalHistoryController {
         String label;
         switch (index) {
             case 1:
-                label = "First Entry: ";
+                label = "1st Entry: ";
                 break;
             case 2:
-                label = "Second Entry: ";
+                label = "2nd Entry: ";
                 break;
             case 3:
-                label = "Third Entry: ";
+                label = "3rd Entry: ";
                 break;
             default:
                 label = index + "th Entry: ";

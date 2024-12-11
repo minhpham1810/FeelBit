@@ -65,6 +65,9 @@ public class CreateAccountController {
     @FXML
     private AnchorPane displayPane;
 
+    @FXML
+    private Button backToLoginBtn;
+
     /**
      * Initializes the controller, setting up event handlers and hover effects.
      */
@@ -76,6 +79,7 @@ public class CreateAccountController {
         assert createAccountBtn != null : "fx:id=\"createAccountBtn\" was not injected: check your FXML file 'CreateAccount.fxml'.";
         assert popUpLabel != null : "fx:id=\"popUpLabel\" was not injected: check your FXML file 'CreateAccount.fxml'.";
         assert displayPane != null : "fx:id=\"displayPane\" was not injected: check your FXML file 'CreateAccount.fxml'.";
+        assert backToLoginBtn != null : "fx:id=\"backToLoginBtn\" was not injected: check your FXML file 'CreateAccount.fxml'.";
 
         initEventHandlers();
         addButtonHoverEffects();
@@ -115,6 +119,8 @@ public class CreateAccountController {
                 delay.play();
             }
         });
+
+        backToLoginBtn.setOnAction(event -> navigateTo("/Login.fxml"));
     }
 
     /**
