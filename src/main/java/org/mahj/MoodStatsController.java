@@ -100,16 +100,22 @@ public class MoodStatsController {
             switch (mood) {
                 case "HAPPY":
                     moodData.put("Happy", moodData.get("Happy") + 1);
+                    break;
                 case "SAD":
                     moodData.put("Sad", moodData.get("Sad") + 1);
+                    break;
                 case "ANGRY":
                     moodData.put("Angry", moodData.get("Angry") + 1);
+                    break;
                 case "BLEH":
                     moodData.put("Bleh", moodData.get("Bleh") + 1);
+                    break;
                 case "CONFUSED":
                     moodData.put("Confused", moodData.get("Confused") + 1);
+                    break;
                 case "GRATEFUL":
                     moodData.put("Grateful", moodData.get("Grateful") + 1);
+                    break;
             }
         }
         System.out.println(moodData);
