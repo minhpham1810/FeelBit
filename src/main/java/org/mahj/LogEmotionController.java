@@ -70,6 +70,7 @@ public class LogEmotionController {
         initializeToggleGroupWithEffects();
         applyHoverEffects(submitBtn, "#93E1D8", "#7EC1B4", "#65A394");
         applyHoverEffects(backBtn, "transparent", "#d0d0d0", "#c0c0c0");
+        journalTextArea.setWrapText(true);
         initializeEventHandlers();
     }
 
@@ -85,7 +86,7 @@ public class LogEmotionController {
      */
     private void initializeToggleGroupWithEffects() {
         ToggleGroup group = new ToggleGroup();
-        ToggleButton[] toggleButtons = {happyBtn, sadBtn, blehBtn, confusedBtn, angryBtn, prayingBtn};
+        ToggleButton[] toggleButtons = { happyBtn, sadBtn, blehBtn, confusedBtn, angryBtn, prayingBtn };
 
         for (ToggleButton btn : toggleButtons) {
             btn.setToggleGroup(group);
@@ -115,13 +116,14 @@ public class LogEmotionController {
     /**
      * Sets hover, press, and retain styles for buttons or toggle buttons.
      *
-     * @param button       The button to apply effects to.
-     * @param defaultColor The default background color.
-     * @param hoverColor   The background color on hover.
-     * @param pressColor   The background color on press.
+     * @param button        The button to apply effects to.
+     * @param defaultColor  The default background color.
+     * @param hoverColor    The background color on hover.
+     * @param pressColor    The background color on press.
      * @param selectedColor The background color when selected.
      */
-    private void applyHoverAndSelectionEffects(ToggleButton button, String defaultColor, String hoverColor, String pressColor, String selectedColor) {
+    private void applyHoverAndSelectionEffects(ToggleButton button, String defaultColor, String hoverColor,
+            String pressColor, String selectedColor) {
         String baseStyle = "-fx-background-radius: 20px; -fx-text-fill: black;";
         button.setStyle(baseStyle + "-fx-background-color: " + defaultColor + ";");
 
@@ -223,6 +225,7 @@ public class LogEmotionController {
 
     /**
      * Navigates to a specified FXML page.
+     * 
      * @param fxmlFile The path to the FXML file.
      */
     private void navigateTo(String fxmlFile) {
@@ -237,6 +240,7 @@ public class LogEmotionController {
 
     /**
      * Converts a UserLog object into a MongoDB document.
+     * 
      * @param userLog The UserLog object to convert.
      * @return The MongoDB document representation of the UserLog.
      */
