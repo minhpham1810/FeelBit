@@ -43,7 +43,7 @@ Third party libraries used include:
 URL to Our Video Presentation: 
 
 ## How to run it
-1. Begin by opening the application by pressing the run button on the build.gradle file. Scene Builder should open and 
+1. Begin by opening the application by pressing the run button on the build.gradle file, or run the command "./gradlew run" in your terminal. Scene Builder should open and 
 take you to FeelBit’s login page.
 
 2. For new users, we encourage pressing the create account button at the bottom of the login page, where you’ll be taken
