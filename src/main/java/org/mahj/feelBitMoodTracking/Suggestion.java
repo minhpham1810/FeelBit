@@ -36,7 +36,7 @@ public class Suggestion {
     /**
      * Our API key
      */
-    private static final String API_KEY = "AIzaSyDLay1OVMSqQD1wWsk70QpmnWOmj4otwGc";
+    private static final String API_KEY = "AIzaSyCM6Q8cQ0VQSaPxx34KeAHwG703m53SlxE";
 
     /**
      * The link used to call the API
