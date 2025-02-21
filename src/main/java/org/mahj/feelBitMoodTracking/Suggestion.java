@@ -36,7 +36,7 @@ public class Suggestion {
     /**
      * Our API key
      */
-    private static final String API_KEY = {{ secrets.API_KEY }};
+    private static final String API_KEY = {{ secrets.GEMINI_API_KEY }};
 
     /**
      * The link used to call the API
